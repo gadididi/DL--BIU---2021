@@ -8,7 +8,7 @@ Our goal is to build a CGAN that generates 7,038 Monet-style images with only 30
 ## Getting Started
 1. open the [colab](https://colab.research.google.com/drive/1vsGq3VUZJB3OOf2m5qeeyG45Nor22J7_#scrollTo=WoSotYff9nqG) link.
 2. Set the runtime type to GPU.
-3. run all. 
+3. click "Runtime" -> "Run all". 
 
 ## Solution
 ### General approach
