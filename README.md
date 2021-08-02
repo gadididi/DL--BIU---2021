@@ -15,3 +15,28 @@ The GAN architecture is an approach to training a model that is comprised of two
 The CycleGAN is an extension of the GAN architecture that involves the simultaneous training of two generator models and two discriminator models.
 
 One generator takes images from the first domain as input and outputs images for the second domain, and the other generator takes images from the second domain as input and generates images for the first domain. Discriminator models are then used to determine how plausible the generated images are and update the generator models accordingly.
+
+### Design
+we used PyTorch framework.
+As we mentioned above our model consists of 2 generators. The first produces paintings by Mont (Domain A), and the second produces photographs (Domain B).
+
+#### Generator
+We created 2 generators, one for each domain. But they both have the same architecture.
+The generator starts from a noise image performing encoding for it and then decoding. We added Residual blocks.
+We came to see that a generator without Residual blocks does not bring good results.
+We set up 9 Residual blocks for the generator.
+
+![image](https://user-images.githubusercontent.com/59120630/127920577-683f8502-8f95-4aae-89c7-b7accdf884da.png)
+
+#### Discriminator
+We created 2 Discriminators. Both with the same architecture.
+The first for domain A (fake photo and fake ID) and the second for domain B (fake photo and photo ID).
+The networks are based on the CNN model.
+And then switch to the fully connected network.
+
+#### The Training Process
+First, we trained the model about 10 epochs. We have seen that there is indeed an improvement in output from epoch to epoch. We tried to train about 30 epochs and saw that the improvement continued to grow.
+We used batches the size of 5 items per batch.
+Second, the learning rate is 0.2. We also used "ADAM" for optimizing (according to recommendations we saw on Internet)
+We trained the model as follows:
+\t 1. ddf
