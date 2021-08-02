@@ -5,6 +5,9 @@ Image-to-image translation is a class of vision and graphics problems where the 
 
 Our goal is to build a CGAN that generates 7,038 Monet-style images with only 30 monet's paints. Since we only had to work with thirty images, we had to use special ways to optimize the familiar model.
 
+## Getting Started
+open the [colab](https://colab.research.google.com/drive/1vsGq3VUZJB3OOf2m5qeeyG45Nor22J7_#scrollTo=WoSotYff9nqG) link
+
 ## Solution
 ### General approach
 As we mentioned in the introduction, since we only need to use 30 images, we had to use more efficient ways to achieve this goal.
