@@ -45,7 +45,8 @@ We trained the model as follows:
 
 #### Loss Functions
 Our loss consists of several factors:
-1. Generator Loss
-* dljkd
+1. **Generator Loss**
+  - **loss identity** - Measures the mean absolute error (MAE) between each element in the input $x$ and target $y$. 
+  - 
 2. dddd
 3. 
