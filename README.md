@@ -46,7 +46,9 @@ We trained the model as follows:
 #### Loss Functions
 Our loss consists of several factors:
 1. **Generator Loss**
-  - **loss identity** - Measures the mean absolute error (MAE) between each element in the input $x$ and target $y$. 
-  - 
+   - **loss identity** - Measures the mean absolute error (MAE) between each element in the input x and target y. This is the loss\_Identity\_Photo:
 2. dddd
 3. 
+
+#### Data augmentation
+Our data set contain only 30 Monet paints. so we use Data augmentation technique for create more data by what we have. For example, random crop, resize or add some noise to the picture.
