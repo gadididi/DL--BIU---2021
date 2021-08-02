@@ -46,7 +46,10 @@ We trained the model as follows:
 #### Loss Functions
 Our loss consists of several factors:
 1. **Generator Loss**
-   - **loss identity** - Measures the mean absolute error (MAE) between each element in the input x and target y. This is the loss\_Identity\_Photo:
+   - **loss identity** - Measures the mean absolute error (MAE) between each element in the input x and target y. 
+   This is the loss_Identity_Photo: 
+   x = the output from Generator_photo_to_monet(real\_Monet) function.
+   y = real_Monet photo same as loss_Identity_Monet to sum: identity loss = loss_identity = (loss_Identity_Monet + loss_Identity_Photo)/2
 2. dddd
 3. 
 
