@@ -54,7 +54,7 @@ Our loss consists of several factors:
    - **Cycle Loss** - We focus on Monet Generator, but is same for the second. We get photo and generate fake Monet paint. Now we use Photo Generator with the fake paint we made. We get recovery photo. We check: 
    ![image](https://user-images.githubusercontent.com/59120630/127923950-8468cef4-43d7-47d5-9fbd-e8df48a1e051.png)
    We compare pixel with Measures  the  mean  absolute  error  (MAE) method.
-   Finally, the total loss (for both Generators) is: loss_G = loss_GAN + (10.0*loss_cycle) + (5.0*loss_identity)
+   Finally, the total loss (for both Generators) is: loss_G = loss_GAN + (10.0\*loss_cycle) + (5.0\*loss_identity)
 2. **Discriminator Loss**
    - **GAN Loss** - Creates a criterion that measures the mean squared error (squared L2 norm) between each element in the input x and target y.
     In fact we send pairs of image and label (fake/ real) to Monet Discriminator and to Photo Discriminator. We send 2 batch per Discriminator. First batch is real (Photo or paint, depended by the model) and we want to get label=1. The second batch is fake and we hope to get label=0 for all the images in this batch. we make average loss for those two batch (per model). 
