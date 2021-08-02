@@ -11,6 +11,7 @@ Our goal is to build a CGAN that generates 7,038 Monet-style images with only 30
 3. click "Runtime" -> "Run all". 
 
 ## Solution
+In the pdf file you can read the experiment report.
 ### General approach
 As we mentioned in the introduction, since we only need to use 30 images, we had to use more efficient ways to achieve this goal.
 Initially, we were looking for existing models for monet's drawings and wanted to learn the best from each one, so we came up with ideas for our solution.
