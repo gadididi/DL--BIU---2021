@@ -43,4 +43,9 @@ We trained the model as follows:
 1. Training for the generators. Then calculate the loss and update the weights of the generators.
 2. Training the discriminators, calculating their losses and then updating their weights.
 
-#### Loss
+#### Loss Functions
+Our loss consists of several factors:
+1. Generator Loss
+* dljkd
+2. dddd
+3. 
