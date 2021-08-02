@@ -39,4 +39,8 @@ First, we trained the model about 10 epochs. We have seen that there is indeed a
 We used batches the size of 5 items per batch.
 Second, the learning rate is 0.2. We also used "ADAM" for optimizing (according to recommendations we saw on Internet)
 We trained the model as follows:
-\t 1. ddf
+
+1. Training for the generators. Then calculate the loss and update the weights of the generators.
+2. Training the discriminators, calculating their losses and then updating their weights.
+
+#### Loss
